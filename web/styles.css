@@ -1,0 +1,135 @@
+/* 全局样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h3, h2, h1 {
+    text-align: center;
+    color: #495057;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    width: 90%;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 密码强度显示样式 */
+.strength {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.weak {
+    background-color: red;
+}
+
+.medium {
+    background-color: orange;
+}
+
+.strong {
+    background-color: green;
+}
+
+/* 二次元背景样式 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("cssuseimagebackground/Formidable.jpg") no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* 三角形悬浮效果 */
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid rgba(0, 0, 0, 0.1);
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* 鼠标指针吸引效果 */
+body {
+    cursor: url("cssuseimagecursor/Formidable.cur"), auto;
+}
+
+/* 居中 */
+.center-text {
+    text-align: center;
+}
+
+.centered-table {
+    margin: 0 auto; /* 使表格在页面中水平居中 */
+    border-collapse: collapse; /* 合并相邻边框 */
+    width: 60%; /* 或者你想要的任何宽度 */
+}
+
+.centered-table th,
+.centered-table td {
+    border: 2px solid black; /* 设置边框 */
+    text-align: center; /* 文本居中 */
+    padding: 30px; /* 单元格内边距 */
+}
